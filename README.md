@@ -1,6 +1,6 @@
 # IoT Environment Monitoring System
 
-This project involves an IoT-based environment monitoring system using an ESP32, DHT11 sensor, soil moisture sensor, and a relay. The system reads temperature, humidity, and soil moisture levels, displays them on an LCD, and sends the data to Adafruit IO. The relay is controlled based on the soil moisture level, turning on when the soil is dry and off when it is wet.
+This project involves an IoT-based environment monitoring system using an ESP32, DHT11 sensor, soil moisture sensor, and a relay. The system reads temperature, humidity, and soil moisture levels, displays them on an LCD, and sends the data to Adafruit IO. The relay is controlled based on the soil moisture level,connected to a pump, turning on when the soil is dry and off when it is wet.
 
 ## Components Used
 
@@ -50,6 +50,10 @@ This project involves an IoT-based environment monitoring system using an ESP32,
 
     Connect your ESP32 to your computer and upload the code using the Arduino IDE.
 
+    ![Dry Soil](Soil-Dry.png)
+
+    ![Wet Soil](Soil-Wet.png)
+
 ## Adding Dashboard Feeds to Adafruit IO
 
 1. **Sign in to Adafruit IO:**
@@ -70,16 +74,18 @@ This project involves an IoT-based environment monitoring system using an ESP32,
 
     - Open your dashboard and click on the "+" icon to add a new block.
     - Add the following blocks:
-        - **Gauge** for `Proj1_Temp` to display temperature.
-        - **Gauge** for `Proj1_Hum` to display humidity.
+        - **Gauge** for `Temperature` to display temperature.
+        - **Gauge** for `Humidity` to display humidity.
         - **Text** for `Soil` to display soil moisture status.
-        - **Toggle** for `relay` to control the relay status.
+        - **Toggle** for `Relay` to control the relay status.
 
     Configure each block to use the corresponding feed created earlier.
 
 5. **View your dashboard:**
 
     Once all blocks are added and configured, you can view your dashboard to monitor the sensor data in real-time.
+
+    ![Gauge Values](Temp-Hum_Gauge.png)
 
 ## Usage
 
@@ -94,11 +100,6 @@ This project involves an IoT-based environment monitoring system using an ESP32,
 - Verify WiFi credentials and Adafruit IO credentials are correct.
 - Check the serial monitor for any error messages.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 - [Adafruit IO](https://io.adafruit.com/)
-- [Arduino](https://www.arduino.cc/)
