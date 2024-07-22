@@ -13,7 +13,7 @@ This project involves an IoT-based environment monitoring system using an ESP32,
 
 ## Circuit Diagram
 
-![Circuit Diagram](circuit-diagram.png)
+![Circuit Diagram](Connections.png)
 
 ## Installation
 
