@@ -67,7 +67,7 @@ This project involves an IoT-based environment monitoring system using an ESP32,
 2. **Create new feeds:**
 
     - Navigate to "Feeds" and click "Create a New Feed".
-    - Create feeds named `Proj1_Temp`, `Proj1_Hum`, `Soil`, and `relay`.
+    - Create feeds named `Temperature`, `Humidity`, `Soil`, and `Relay`.
 
 3. **Create a new dashboard:**
 
