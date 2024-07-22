@@ -52,7 +52,11 @@ This project involves an IoT-based environment monitoring system using an ESP32,
 
     ![Dry Soil](Soil-Dry.png)
 
+    #### <p align="center">Turn pump on when soil is dry.</p>
+
     ![Wet Soil](Soil-Wet.png)
+
+    #### <p align="center">Turn pump off when soil moisture is exceeded.</p>
 
 ## Adding Dashboard Feeds to Adafruit IO
 
@@ -86,6 +90,8 @@ This project involves an IoT-based environment monitoring system using an ESP32,
     Once all blocks are added and configured, you can view your dashboard to monitor the sensor data in real-time.
 
     ![Gauge Values](Temp-Hum_Gauge.png)
+    #### <p align="center">Data Displayed Remotely</p>
+
 
 ## Usage
 
